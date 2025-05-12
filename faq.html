@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="faqs padding-top-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="faqs-heading">
+          <h1>Frequently Asked Questions</h1>
+        </div>
+      </div>
+      <div class="col-md-8">
+      <div class="accordionn">
+        <div class="accordionn-item">
+          <button id="accordionn-button-1" aria-expanded="false">
+            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordionn-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+              Ut tortor pretium viverra suspendisse potenti.
+            </p>
+          </div>
+        </div>
+        <div class="accordionn-item">
+          <button id="accordionn-button-2" aria-expanded="false">
+            <span class="accordionn-title">Why is the sky blue?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordionn-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+              Ut tortor pretium viverra suspendisse potenti.
+            </p>
+          </div>
+        </div>
+        <div class="accordionn-item">
+          <button id="accordionn-button-3" aria-expanded="false">
+            <span class="accordionn-title">Will we ever discover aliens?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordionn-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+              Ut tortor pretium viverra suspendisse potenti.
+            </p>
+          </div>
+        </div>
+        <div class="accordionn-item">
+          <button id="accordionn-button-4" aria-expanded="false">
+            <span class="accordionn-title">How much does the Earth weigh?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordionn-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+              Ut tortor pretium viverra suspendisse potenti.
+            </p>
+          </div>
+        </div>
+        <div class="accordionn-item">
+          <button id="accordionn-button-5" aria-expanded="false">
+            <span class="accordionn-title">How do airplanes stay up?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordionn-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+              Ut tortor pretium viverra suspendisse potenti.
+            </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    </div>
+  </div>
+</div>
+    <script>
+      const items = document.querySelectorAll('.accordionn button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+    </script>
+  </body>
+</html>
