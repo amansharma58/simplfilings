@@ -880,3 +880,66 @@ body{
     border-radius: 3px;
     color: #ffffff;
 }
+/* about us page css */
+
+.aboutmiddle-icon{
+  width: 50px;
+    min-width: 50px;
+    height: 50px;
+    background: #db709321; 
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.aboutmiddle-icon i{
+  font-size: 24px;
+  /* color: #db7093; */
+}
+.bg-pink{
+  background: #db709321;
+  color: #db7093;
+}
+.bg-orange{
+  background: #e9967a21;
+  color: #e9967a;
+}
+.bg-blue{
+  background: #2f57ef21;
+  color: #01487c;
+}
+.aboutmiddle-content h3{
+      font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+.aboutfounder-content span{
+  background: #2f57ef21;
+  color: #01487c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.aboutfounder-image img{
+  border-radius: 20px;
+  outline: 2px solid white;
+    outline-offset: -10px;
+}
+.ourteam-heading span{
+    background: #db709321;
+    color: #db7093;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.ourteam-heading{
+  padding-bottom: 50px;
+}
+.ourteam{
+  margin-bottom: 30px;
+}
+.ourteam-content{
+  padding: 10px 0px;
+}
